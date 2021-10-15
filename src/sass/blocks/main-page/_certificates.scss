@@ -1,0 +1,33 @@
+.certificates{
+   margin-bottom: 150px;
+   &__wrapper{
+      padding: 50px 110px 50px 0;
+      height: 490px;
+      background: #F0D577;
+      border-radius: 10px;;
+      outline: 1px solid #FFFFFF;
+      outline-offset: -20px;
+      background-image: url('../assets/img/certificates/star.png');
+      background-repeat: no-repeat;
+      background-position: bottom 20px left 22px;
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__item{
+      width: 232px;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #9F9F9F;
+      font-weight: 700;
+      &:first-child{
+         margin-right: 90px;
+      }
+   }
+   &__name{
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      margin: 6px 0 14px 0;
+   }
+}

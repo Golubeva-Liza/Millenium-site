@@ -14,7 +14,8 @@ const dist = "./dist/";
 gulp.task('html', function () {
   return gulp.src("src/*.html")
       .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest("dist/"));
+      .pipe(gulp.dest("dist/"))
+      .pipe(browserSync.stream());
 });
 
 gulp.task('styles', function() {
@@ -26,24 +27,6 @@ gulp.task('styles', function() {
       .pipe(gulp.dest("dist/css"))
       .pipe(browserSync.stream());
 });
-
-// gulp.task('fonts', function () {
-//   return gulp.src("src/fonts/**/*")
-//       .pipe(gulp.dest("dist/fonts"))
-//       .pipe(browserSync.stream());
-// });
-
-// gulp.task('icons', function () {
-//   return gulp.src("src/icons/**/*")
-//       .pipe(gulp.dest("dist/icons"))
-//       .pipe(browserSync.stream());
-// });
-
-// gulp.task('images', function () {
-//   return gulp.src("src/img/**/*")
-//       .pipe(gulp.dest("dist/img"))
-//       .pipe(browserSync.stream());
-// });
 
 gulp.task("copy-assets", () => {
   return gulp.src("./src/assets/**/*.*")

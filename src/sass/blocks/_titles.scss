@@ -1,26 +1,37 @@
-.title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: $main-color;
-    &_h2{
-        font-weight: 800;
-    }
-    &_fz14{
-        font-size: 14px;
-        line-height: 17px;
-    }
-    &_fz18{
-        font-size: 18px;
-        line-height: 22px;
-    }
-    &_fz24{
-        font-size: 24px;
-        line-height: 30px;
-    }
-    &_fz48{
-        font-size: 48px;
-        line-height: 60px;
-    }
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 44px;
+   color: $main-color;
+   margin: 0;
+
+   &_h2 {
+      font-weight: 800;
+   }
+
+   &_fz14 {
+      font-size: 14px;
+      line-height: 17px;
+   }
+
+   &_fz16 {
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   &_fz18 {
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   &_fz24 {
+      font-size: 24px;
+      line-height: 30px;
+   }
+
+   &_fz48 {
+      font-size: 48px;
+      line-height: 60px;
+   }
 
 }

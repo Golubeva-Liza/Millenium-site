@@ -1,0 +1,45 @@
+.stages{
+   margin-bottom: 150px;
+   &__h2{
+      margin-bottom: 35px;
+   }
+   &__progress-bar{
+      background-color: rgb(229, 201, 201);
+   }
+   .progress-bar{
+      position:sticky; 
+      top: 115px + 40px; //высота шапки + отступ от шапки
+      display: flex;
+      margin-left: 36px;
+      &__line{
+         width: 5px;
+         background-color: #BDBDBD;
+         height: inherit;
+      }
+      &__item{
+         font-weight: 600;
+         position: relative;
+         margin-bottom: 50px;
+         padding-left: 40px;
+         &:last-child{
+            margin-bottom: 0;
+         }
+         &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -13px;
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            background: #BDBDBD;
+         }
+         &_active{
+            color: $second-color;
+            &::before{
+               background: $second-color;
+            }
+         }
+      }
+   }
+}

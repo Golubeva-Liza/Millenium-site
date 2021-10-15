@@ -10,13 +10,98 @@
     margin: 0;
     padding: 0;
     font-size: 18px;
+    line-height: 22px;
+    color: $main-color;
 }
-.header{
-    background-color: red;
-    width: 100%;
-    height: 200px;
+html, body {
+    height: 100%;
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+.main {
+    flex: 1 0 auto;
+    margin-top: 115px; //хэдер в position: fixed, высота (60) + паддинги (32 и 23)
+}
+.footer{
+    flex: 0 0 auto;
+}
+ul {
+   list-style-type: none;
+   margin: 0;
+}
+a:hover{
+   text-decoration: none;
+}
+p{
+   margin: 0;
+}
+
+
+
+.change-color{
+   color: $second-color !important;
+   font-size: inherit;
+   line-height: inherit;
+}
+.container{
+   position: relative;
+}
+@media (min-width: 1200px){
+   .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1190px;
+  }
+}
+.hr{
+
+}
+.hr_red{
+   width: 175px;
+   height: 2px;
+   background-color: $red-color;
+   margin: 10px 0;
+   border: none;
+}
+.office-photo{
+   margin-bottom: 150px;
+   overflow: hidden;
+   height: 590px;
+   img{
+      width: 100%;
+   }
+}
+.input{
+   width: 100%;
+   background-color: transparent;
+   border: none;
+   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+   padding-bottom: 8px;
+   outline: none;
+   &:focus{
+      border-bottom: 2px solid #fff;
+   }
+   &::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.4);}
+   &::-moz-placeholder {color:rgba(255, 255, 255, 0.4);}
+   &:-moz-placeholder {color:rgba(255, 255, 255, 0.4);}
+   &:-ms-input-placeholder {color:rgba(255, 255, 255, 0.4);}
+}
+
+
 
 @import 'blocks/titles';
+@import 'blocks/button';
+@import 'blocks/stage-card';
 
 @import 'blocks/header';
+@import 'blocks/footer';
+
+@import 'blocks/main-page/main-screen';
+@import 'blocks/main-page/about-stores';
+@import 'blocks/main-page/advantages';
+@import 'blocks/main-page/researches';
+@import 'blocks/main-page/stages';
+@import 'blocks/main-page/company';
+@import 'blocks/main-page/certificates';

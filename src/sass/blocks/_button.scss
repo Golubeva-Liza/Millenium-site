@@ -1,0 +1,21 @@
+.button{
+   transition: all .4s;
+   background: $second-color;
+   border-radius: 5px;
+   height: 60px;
+   color: #fff;
+   font-weight: 700;
+   font-size: 14px;
+   width: 100%;
+   border: none;
+   &:hover{
+      background: $second-color-hover;
+   }
+   &_reverse{
+      color: $second-color;
+      background: #fff;
+      &:hover{
+         background: #e5e2ff;
+      }
+   }
+}

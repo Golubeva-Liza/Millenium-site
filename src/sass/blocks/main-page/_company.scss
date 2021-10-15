@@ -1,0 +1,57 @@
+.company{
+   margin-bottom: 200px;
+   &__wrapper{
+      padding: 60px 0 180px 0;
+      background: #F4F8FF;
+      border-radius: 20px;
+      position: relative;
+      background-image:  url("../assets/img/section_company/like.png"), url("../assets/img/section_company/cube_big.png"), url("../assets/img/section_company/cube_small.png"), url("../assets/img/section_company/donat.png"), url("../assets/img/section_company/hr.png");  
+      background-position: bottom 32px left 0px, bottom -5px right, top -20px left 400px, bottom 140px left 515px, top 40% right -30px;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+   }
+   &__h2{
+      margin-bottom: 20px;
+   }
+   &__descr{
+      span{
+         font-weight: 600;
+      }
+   }
+
+
+   &__form{
+      background: $second-color;
+      border-radius: 20px;
+      padding: 55px 64px 45px 64px;
+   }
+   &__form-title{
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   &__form-descr{
+      font-size: 12px;
+      line-height: 15px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 45px;
+   }
+   &__text-input{
+      color: white;
+      margin-bottom: 30px;
+   }
+   &__form-label{
+      margin-top: 25px;
+      font-size: 12px;
+      line-height: 15px;
+      color: #9B8FFF;
+      a{
+         color: white;
+         font-size: inherit;
+         line-height: inherit;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
+}

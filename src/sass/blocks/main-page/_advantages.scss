@@ -1,0 +1,39 @@
+.advantages{
+   margin-bottom: 150px;
+   &__h2{
+      margin-bottom: 55px;
+   }
+   &__row{
+      align-items: center;
+   }
+   &__btn-row{
+      margin-top: 80px;
+   }
+   &__title{
+      margin-bottom: 15px;
+   }
+   &__list-item{
+      position: relative;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 10px;
+      padding-left: 17px;
+      &::before{
+         content: '';
+         width: 9px;
+         height: 9px;
+         background-color: $main-color;
+         border-radius: 100%;
+         position: absolute;
+         top: 4px;
+         left: 0;
+      }
+      &:last-child{
+         margin-bottom: 0;
+      }
+
+   }
+   &__btn{
+      margin: 0 auto;
+   }
+}

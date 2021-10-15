@@ -1,0 +1,42 @@
+.about-stores{
+   margin-bottom: 150px;
+   &__title{
+      margin-bottom: 50px;
+   }
+   &__card{
+      transition: all .7s;
+      height: 200px;
+      padding: 0 25px 0 15px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      margin-bottom: 50px;
+      &:hover{
+         background: $red-color;
+      }
+      &:hover .hr_red{
+         background: #fff;
+      }
+      &:hover p, &:hover h3{
+         color: #fff;
+      }
+   }
+   &__card-num{
+      margin-top: 5px;
+      text-shadow: 0px 4px 8px #00000040;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78px;
+      color: #FFFFFF;
+   }
+   &__card-title{
+      margin: 0;
+   }
+   &__card-descr{
+      font-size: 12px;
+      line-height: 15px;
+   }
+   &__btn{
+      margin: 0 auto;
+   }
+}
