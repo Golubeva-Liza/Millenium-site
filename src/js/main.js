@@ -1,1 +1,6 @@
-console.log('Hello Liza');
+import modal from './modules/modal';
+
+document.addEventListener('DOMContentLoaded', () => {
+   modal("#orderСall");
+
+});
