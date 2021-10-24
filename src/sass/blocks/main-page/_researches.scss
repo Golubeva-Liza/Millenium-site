@@ -1,10 +1,51 @@
 .researches{
    margin-bottom: 120px;
+   &__img{
+      background-image: url('../../../assets/img/learn_business.png');
+      background-position: top 25px right -60px;
+      background-repeat: no-repeat;
+   }
+   
+   
 
    &__text{
       margin-bottom: 22px;
    }
    &__row{
       align-items: center;
+   }
+   &__h2{
+      margin-bottom: 65px;
+   }
+}
+
+@media (max-width: 1199px){
+   .researches{
+      &__h2{
+         margin-bottom: 40px;
+      }
+      &__img{
+         background-position: top 50px right -30px;
+         background-size: 550px;
+      }
+      &__text{
+         font-size: 16px;
+      }
+   }
+}
+@media (max-width: 991px){
+   .researches{
+      margin-bottom: 100px;
+      &__h2{
+         margin-bottom: 30px;
+      }
+      &__img{
+         background-position: top 70px right -30px;
+         background-size: 460px;
+      }
+      &__text{
+         font-size: 14px;
+         line-height: 17px;
+      }
    }
 }

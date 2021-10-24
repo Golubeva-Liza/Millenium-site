@@ -6,6 +6,12 @@
    &__row{
       align-items: center;
    }
+   &__col{
+      overflow: hidden;
+      img{
+         width: 100%;
+      }
+   }
    &__btn-row{
       margin-top: 80px;
    }
@@ -35,5 +41,26 @@
    }
    &__btn{
       margin: 0 auto;
+   }
+}
+
+@media (max-width: 1199px){
+   .advantages{
+      margin-bottom: 130px;
+   }
+}
+@media (max-width: 991px){
+   .advantages{
+      &__title{
+         font-size: 18px;
+         line-height: 22px;
+      }
+      &__list-item{
+         font-size: 12px;
+         line-height: 15px;
+      }
+      &__row{
+         margin-bottom: 30px;
+      }
    }
 }

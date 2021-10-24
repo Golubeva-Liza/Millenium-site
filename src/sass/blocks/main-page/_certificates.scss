@@ -31,3 +31,33 @@
       margin: 6px 0 14px 0;
    }
 }
+
+
+@media (max-width: 1199px){
+   .certificates{
+      margin-bottom: 130px;
+      &__wrapper{
+         padding: 50px 60px 50px 0;
+         background-size: 300px;
+      }
+      &__item{
+         &:first-child{
+            margin-right: 50px;
+         }
+      }
+   }
+}
+@media (max-width: 991px){
+   .certificates{
+      &__wrapper{
+         background-image: none;
+         justify-content: space-between;
+         padding: 50px 80px 50px 80px;
+      }
+      &__item{
+         &:first-child{
+            margin-right: 0;
+         }
+      }
+   }
+}

@@ -7,10 +7,15 @@
    z-index: 20;
    &__wrapper{
       align-items: center;
+      position: relative;
    }
    &__list{
       display: flex;
-      
+   }
+   &__logo{
+      img{
+         width: 100%;
+      }
    }
    &__list-item{
       margin-right: 20px;
@@ -22,6 +27,9 @@
          font-size: 14px;
          color: $main-color;
          font-weight: 700;
+      }
+      &_new{
+         display: none;
       }
    }
    &__contacts{
@@ -46,4 +54,100 @@
    &__contacts-social{
       margin-right: 15px;
    }
+   &__hamburger{
+      display: none;
+      span{
+         display: block;
+         background: $second-color;
+         border-radius: 1px;
+         width: 27px;
+         height: 4px;
+         margin: 4px 0;
+      }
+      span:first-child{
+         width: 41px;
+         margin: 0;
+      }
+      span:last-child{
+         width: 15px;
+         margin: 0;
+      }
+   }
+   &__btn-small{
+      display: none;
+      height: 40px;
+   }
+}
+
+
+@media (max-width: 1199px){
+   .header{
+      &__list-item{
+         margin-right: 15px;
+         a{
+            font-size: 12px;
+         }
+      }
+      &__contacts-social{
+         display: none;
+      }
+      &__phone{
+         font-size: 20px;
+      }
+   }
+}
+@media (max-width: 991px){
+   .header{
+      padding: 20px 0 20px 0;
+      &__hamburger{
+         display: block;
+      }
+      &__menu{
+         z-index: 10;
+         position: fixed;
+         top: 0;
+         // right: -100%;
+         right: 0;
+         background-color: #fff;
+         transition: 0.6s all;
+         &_active{
+            right: 0;
+         }
+      }
+      &__list{
+         height: 100vh;
+         flex-direction: column;
+         justify-content: center;
+      }
+      &__list-item{
+         a{
+            font-size: 16px;
+            line-height: 20px;
+         }
+         text-align: center;
+         margin-bottom: 30px;
+         &_new{
+            display: block;
+         }
+      }
+      &__contacts{
+         display: none;
+      }
+      &__btn-big{
+         display: none;
+      }
+      &__btn-small{
+         display: block;
+      }
+      &__logo{
+         display: flex;
+         justify-content: center;
+         img{
+            width: 150px;
+         }
+      }
+   }
+}
+@media (max-width: 768px){
+   
 }

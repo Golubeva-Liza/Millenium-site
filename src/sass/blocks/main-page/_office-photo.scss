@@ -1,0 +1,21 @@
+.office-photo{
+   margin-bottom: 130px;
+   overflow: hidden;
+   height: 570px;
+   img{
+      width: 100%;
+   }
+}
+
+@media (max-width: 1199px){
+   .office-photo{
+      margin-bottom: 100px;
+      height: 410px;
+   }
+}
+@media (max-width: 991px){
+   .office-photo{
+      margin-bottom: 80px;
+      height: 310px;
+   }
+}

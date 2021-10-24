@@ -15,6 +15,7 @@
    &__descr{
       span{
          font-weight: 600;
+         font-size: inherit;
       }
    }
 
@@ -52,6 +53,46 @@
          &:hover{
             text-decoration: underline;
          }
+      }
+   }
+}
+
+@media (min-width: 1200px){
+   .company{
+      &__h2{
+         max-width: 260px;
+      }
+   }
+}
+@media (max-width: 1199px){
+   .company{
+      margin-bottom: 130px;
+      &__wrapper{
+         background-position: bottom 0px left 0px, bottom -5px right, top -20px left 300px, bottom 100px left 515px, top 40% right -45px;
+      }
+      &__form{
+         padding: 40px 45px 35px 45px;
+      }
+      &__form-title{
+         font-size: 18px;
+         line-height: 22px;
+      }
+   }
+}
+@media (max-width: 991px){
+   .company{
+      &__wrapper{
+         background-position: bottom 0px left 0px, bottom 20px right 30px, top 0px left 50px, bottom 200px left 40px, top 50% right -30px;
+         background-size: 300px, 100px, 100px, 40px, 174px;
+      }
+      &__h2{
+         text-align: center;
+      }
+      &__descr{
+         font-size: 14px;
+         line-height: 17px;
+         text-align: center;
+         margin-bottom: 40px;
       }
    }
 }

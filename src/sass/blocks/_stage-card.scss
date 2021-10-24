@@ -11,6 +11,9 @@
       display: flex;
       align-items: center;
    }
+   &__title{
+      max-width: 350px;
+   }
    &__number{
       width: 53px;
       height: 53px;
@@ -36,5 +39,12 @@
    }
    &__text{
       margin-bottom: 22px;
+   }
+}
+@media (max-width: 991px){
+   .stage-card{
+      &__title{
+         max-width: 450px;
+      }
    }
 }

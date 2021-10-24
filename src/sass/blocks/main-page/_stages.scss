@@ -43,3 +43,10 @@
       }
    }
 }
+@media (max-width: 991px){
+   .stages{
+      .progress-bar{
+         display: none;
+      }
+   }
+}

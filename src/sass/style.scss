@@ -13,6 +13,12 @@
     line-height: 22px;
     color: $main-color;
 }
+@media (max-width: 991px){
+   * {
+      font-size: 16px;
+      line-height: 20px;
+   }
+}
 html, body {
     height: 100%;
 }
@@ -68,14 +74,6 @@ p{
    margin: 10px 0;
    border: none;
 }
-.office-photo{
-   margin-bottom: 150px;
-   overflow: hidden;
-   height: 590px;
-   img{
-      width: 100%;
-   }
-}
 .input{
    width: 100%;
    background-color: transparent;
@@ -109,3 +107,4 @@ p{
 @import 'blocks/main-page/stages';
 @import 'blocks/main-page/company';
 @import 'blocks/main-page/certificates';
+@import 'blocks/main-page/office-photo';
