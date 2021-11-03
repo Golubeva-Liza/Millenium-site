@@ -48,3 +48,35 @@
       }
    }
 }
+@media (max-width: 765px){
+   .stage-card{
+      padding: 23px 25px 25px 25px;
+      margin-bottom: 40px;
+      &__title{
+         font-size: 16px;
+         line-height: 20px;
+      }
+      &__number{
+         width: 35px;
+         height: 35px;
+         font-size: 18px;
+         margin-right: 30px;
+         padding: 0 15px;
+      }
+      &__hr{
+         margin: 18px 0;
+      }
+      &__text{
+         font-size: 14px;
+         line-height: 17px;
+      }
+   }
+}
+@media (max-width: 576px){
+   .stage-card{
+      &__number{
+         margin-right: 20px;
+         padding: 0 15px;
+      }
+   }
+}

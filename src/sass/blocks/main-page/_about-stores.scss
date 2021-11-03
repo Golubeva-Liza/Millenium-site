@@ -64,3 +64,11 @@
       }
    }
 }
+@media (max-width: 576px){
+   .about-stores{
+      &__btn{
+         display: flex;
+         justify-content: center;
+      }
+   }
+}

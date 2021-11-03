@@ -8,6 +8,9 @@ function modal(targetBtnSelector){
       btn.addEventListener('click', () => {
          modal.classList.add('modal_active');
          document.body.style.overflowY = 'hidden';
+         document.body.style.paddingRight = '16px';
+         document.querySelector('.header').style.paddingRight = '16px';
+
 
          modal.addEventListener('click', closeModal, false);
       })
@@ -18,6 +21,8 @@ function modal(targetBtnSelector){
       if (e.target.classList.contains('row') || e.target.classList.contains('modal')){
          modal.classList.remove('modal_active');
          document.body.style.overflowY = 'scroll';
+         document.body.style.paddingRight = 0;
+         document.querySelector('.header').style.paddingRight = 0;
          // modal.removeEventListener('click', closeModal, false); - необязательно убирать, тк работает на modal
       }
       // console.log(e.target);
@@ -27,6 +32,8 @@ function modal(targetBtnSelector){
    closeBtn.addEventListener('click', () => {
       modal.classList.remove('modal_active');
       document.body.style.overflowY = 'scroll';
+      document.body.style.paddingRight = 0;
+      document.querySelector('.header').style.paddingRight = 0;
    });
 
 }

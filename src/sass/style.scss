@@ -2,6 +2,7 @@
 @import 'libs/bootstrap-grid.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
+
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -108,3 +109,4 @@ p{
 @import 'blocks/main-page/company';
 @import 'blocks/main-page/certificates';
 @import 'blocks/main-page/office-photo';
+@import 'blocks/slick-slider';

@@ -1,7 +1,7 @@
 .researches{
    margin-bottom: 120px;
    &__img{
-      background-image: url('../../../assets/img/learn_business.png');
+      background-image: url('../assets/img/learn_business.png');
       background-position: top 25px right -60px;
       background-repeat: no-repeat;
    }
@@ -46,6 +46,24 @@
       &__text{
          font-size: 14px;
          line-height: 17px;
+      }
+   }
+}
+@media (max-width: 765px){
+   .researches{
+      margin-bottom: 50px;
+      &__img{
+         background-position: bottom center;
+         background-size: 460px;
+         padding-bottom: 370px;
+      }
+   }
+}
+@media (max-width: 400px){
+   .researches{
+      &__img{
+         background-size: 380px;
+         padding-bottom: 300px;
       }
    }
 }

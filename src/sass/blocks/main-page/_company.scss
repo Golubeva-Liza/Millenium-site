@@ -91,8 +91,32 @@
       &__descr{
          font-size: 14px;
          line-height: 17px;
-         text-align: center;
+         // text-align: center;
          margin-bottom: 40px;
+      }
+   }
+}
+@media (max-width: 765px){
+   .company{
+      &__wrapper{
+         background-position: bottom 0px left 0px, bottom 50px right 30px, top 0px left 10px, bottom 200px left 40px, top 50% right -30px;
+         background-size: 300px, 100px, 90px, 0, 0;
+      }
+   }
+}
+@media (max-width: 576px){
+   .company{
+      margin-bottom: 100px;
+      &__form{
+         padding: 40px 25px 45px 25px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__wrapper{
+         padding: 60px 0 140px 0;
+         background-position: bottom 0px left 0px, bottom 50px right 30px, top 0px left 10px, bottom 200px left 40px, top 50% right -30px;
+         background-size: 250px, 0, 0, 0, 0;
       }
    }
 }

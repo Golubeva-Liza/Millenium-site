@@ -64,3 +64,30 @@
       }
    }
 }
+@media (max-width: 765px){
+   .advantages{
+      &__row_reverse > div{//только дочерние
+         &:first-child{
+            order: 1;
+         }
+         &:last-child{
+            order: 0;
+         }
+      }
+      &__row{
+         margin-bottom: 70px;
+      }
+      &__h2{
+         margin-bottom: 30px;
+      }
+   }
+}
+@media (max-width: 576px){
+   .advantages{
+      margin-bottom: 100px;
+      &__btn{
+         display: flex;
+         justify-content: center;
+      }
+   }
+}

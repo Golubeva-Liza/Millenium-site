@@ -2,6 +2,7 @@
    margin-bottom: 130px;
    overflow: hidden;
    height: 570px;
+   width: 100%;
    img{
       width: 100%;
    }
@@ -16,6 +17,25 @@
 @media (max-width: 991px){
    .office-photo{
       margin-bottom: 80px;
-      height: 310px;
+      height: auto;
+   }
+}
+@media (max-width: 765px){
+   .office-photo{
+      // margin-bottom: 80px;
+      height: 460px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      img{
+         margin-left: -40px;
+         height: 100%;
+         width: auto;
+      }
+   }
+}
+@media (max-width: 576px){
+   .office-photo{
+      height: 280px;
    }
 }

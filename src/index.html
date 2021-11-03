@@ -36,21 +36,28 @@
       <header class="header">
          <div class="container">
             <div class="row header__wrapper">
-               <div class="col-sm-2 header__hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+               <div class="col-2 header__hamburger-wrapper">
+                  <div id="hamburger" data-menu-close class="header__hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
                </div>
-               <div class="col-sm-4 offset-sm-2 offset-lg-0 col-lg-2 header__logo">
+               <div class="col-4 offset-2 offset-lg-0 col-lg-2 header__logo">
                   <img src="assets/logo.svg" alt="logo">
                </div>
                <nav class="col-sm-6 col-md-5 col-lg-4 header__menu">
+                  <button data-menu-close class="header__close-menu-btn">
+                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1751 10.2896C12.6964 10.8111 12.6964 11.6536 12.1751 12.1751C11.9151 12.4351 11.5738 12.5657 11.2322 12.5657C10.8909 12.5657 10.5496 12.4351 10.2896 12.1751L6.28302 8.16827L2.27643 12.1751C2.01642 12.4351 1.67511 12.5657 1.3338 12.5657C0.992249 12.5657 0.65094 12.4351 0.39093 12.1751C-0.13031 11.6536 -0.13031 10.8111 0.39093 10.2896L4.39777 6.28302L0.39093 2.27643C-0.13031 1.75494 -0.13031 0.912414 0.39093 0.39093C0.912415 -0.13031 1.75494 -0.13031 2.27643 0.39093L6.28302 4.39776L10.2896 0.39093C10.8111 -0.13031 11.6536 -0.13031 12.1751 0.39093C12.6964 0.912414 12.6964 1.75494 12.1751 2.27643L8.16827 6.28302L12.1751 10.2896Z" fill="#363636"/>
+                     </svg>
+                  </button>
                   <ul class="header__list">
                      <li class="header__list-item"><a href="#" class="header__list-link">Главная</a></li>
                      <li class="header__list-item"><a href="#" class="header__list-link">Цены</a></li>
                      <li class="header__list-item"><a href="#" class="header__list-link">Кейсы и отзывы</a></li>
                      <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
-                     <li class="header__list-item header__list-item_new">info@millenium.ru</li>
+                     <li class="header__list-item header__list-item_new header__list-item_new_first">info@millenium.ru</li>
                      <li class="header__list-item header__list-item_new">+7 (495) 792-66-69 <br> пн-пт 10:00–19:00</li>
                   </ul>
                </nav>
@@ -72,7 +79,7 @@
                   </div>
                   <span class="header__contacts-bottom">Ежедневно с 09:00 до 18:00</span>
                </div>
-               <div class="col-sm-2 offset-sm-2 offset-lg-0 col-lg-3 col-xl-2 header__btn">
+               <div class="col-3 offset-1 col-sm-2 offset-sm-2 offset-lg-0 col-lg-3 col-xl-2 header__btn">
                   <button id="orderСall" class="button header__btn-big">
                      Заказать звонок
                   </button>
@@ -101,24 +108,24 @@
             <div class="container">
                <img class="main-screen__img" src="assets/img/main_bg.png" alt="main_bg">
                <div class="row main-screen__wrapper">
-                  <div class="col-sm-10 col-lg-7">
+                  <div class="col-11 col-sm-10 col-lg-7">
                      <h1 class="title main-screen__title">Разработка интернет-магазинов <span class="change-color">на 1C-Битрикс</span></h1>
                   </div>
-                  <div class="col-sm-7 ">
+                  <div class="col-11 col-sm-10 col-md-7">
                      <p class="main-screen__subtitle title_fz16">
                         Разработаем интернет-магазин за 30 дней с уникальным дизайном и продуманной структурой который <span class="main-screen__descr-span change-color">выделит вас на фоне конкурентов</span>
                      </p>
                   </div>
                </div>
                <div class="row">
-                  <div class="col-sm-6 col-md-5 col-lg-3 header__btn">
+                  <div class="col-sm-6 col-md-5 col-lg-3 main-screen__btn">
                      <button class="button">
                         Узнать стоимость
                      </button>
                   </div>
                </div>
                <div class="row">
-                  <p class="col-sm-7 col-md-5  main-screen__descr">
+                  <p class="col-10 col-md-5 main-screen__descr">
                      <span class="change-color">Оставьте заявку и&nbsp;получите бесплатную консультацию от&nbsp;специалиста, полный расчет стоимости разработки и&nbsp;бонус:</span><br> &laquo;15 сервисов которые покажут стратегию продвижения конкурентов, всё об&nbsp;их&nbsp;выдаче в&nbsp;поиске и&nbsp;не&nbsp;только&raquo;
                   </p>
                </div>
@@ -207,7 +214,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="row advantages__row">
+               <div class="row advantages__row advantages__row_reverse">
                   <div class="col-md-6 col-lg-5">
                      <h3 class="title title_fz18 advantages__title change-color">Оформление заказа</h3>
                      <ul class="advantages__list">
@@ -235,7 +242,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="row advantages__row">
+               <div class="row advantages__row advantages__row_reverse">
                   <div class="col-md-6 col-lg-5">
                      <h3 class="title title_fz18 advantages__title change-color">CRM</h3>
                      <ul class="advantages__list">
@@ -249,7 +256,7 @@
                   </div>
                </div>
                <div class="row advantages__btn-row">
-                  <div class="col-md-5 col-lg-3 advantages__btn">
+                  <div class="col-sm-6 col-md-5 col-lg-3 advantages__btn">
                      <button class="button">
                         Узнать стоимость
                      </button>
@@ -284,7 +291,7 @@
                   <div class="col-md-6 ">
                      <p class="researches__text">Каждый клиент – своя история. Мы не берем шаблонные решения, а исследуем рынок конкретно под ваши цели и задачи. </p>
                      <p class="researches__text">Сделать интернет-магазин с&nbsp;нуля непросто. Нужен сайт с&nbsp;качественной разработкой дизайна, который не&nbsp;будет отвлекать от&nbsp;сути, наполнением и&nbsp;рабочими модулями. Кроме этого, для успешного запуска электронной торговой площадки владельцу бизнеса требуется найти поставщиков, выбрать товарные позиции, просчитать рентабельность, уладить другие организационные вопросы вне сети.</p>
-                     <p class="researches__text">Создание интернет-магазина лучше делегировать на&nbsp;профессионалов. Мы&nbsp;возьмем на&nbsp;себя вопросы по&nbsp;разработке <nobr>интернет-магазина</nobr> под ключ. Специалисты компании предоставляют заказчику готовый продающий сайт. Он&nbsp;уже наполнен контентом, ориентирован на&nbsp;конечного потребителя и&nbsp;интуитивно понятен для заказчика.</p>
+                     <p class="researches__text">Создание интернет-магазина лучше делегировать на&nbsp;профессионалов. Мы&nbsp;возьмем на&nbsp;себя вопросы по&nbsp;разработке интернет-магазина под ключ. Специалисты компании предоставляют заказчику готовый продающий сайт. Он&nbsp;уже наполнен контентом, ориентирован на&nbsp;конечного потребителя и&nbsp;интуитивно понятен для заказчика.</p>
                   </div>
                   <div class="col-md-6">
                      <!-- <img src="assets/img/learn_business.png" alt="learn business"> -->
@@ -300,7 +307,9 @@
                <div class="row stages__row">
                   <div class="col-md-5" style="position: relative;">
                      <div class="progress-bar">
-                        <div class="progress-bar__line"></div>
+                        <div class="progress-bar__line">
+                           <div class="progress-bar__active-line"></div>
+                        </div>
                         <ul class="progress-bar__list">
                            <li class="progress-bar__item progress-bar__item_active">01. Маркетинговый анализ бизнеса</li>
                            <li class="progress-bar__item">02. Привлекательный дизайн</li>
@@ -396,13 +405,13 @@
                <div class="company__wrapper">
                   <!-- картинки -->
                   <div class="row">
-                     <div class="col-md-10 offset-md-1 col-lg-5">
+                     <div class="col-10 offset-1 col-lg-5">
                         <h2 class="title title_h2 company__h2">Компания Millenium</h2>
                         <p class="company__descr">Это дорогая и долгая разработка интернет-магазинов на 1С Битрикс! Нельзя сделать <span>качественный</span> цифровой продукт за дешево и быстро!
                            <br><br>
                            Мы создадим интернет-магазин с нуля. Заказчику не придется искать других IT-специалистов для дальнейшей настройки и запуска сайта. Мы настроим сервисы, интегрируем модули для онлайн-торговли, добавим контент и товары. Работы по созданию интернет-магазина с нуля ведутся только после анализа ниши бизнеса.</p>
                      </div>
-                     <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-5">
+                     <div class="col-10 offset-1 col-md-8 offset-md-2 offset-lg-0 col-lg-5">
                         <form action="POST" class="form company__form">
                            <div class="title title_fz24 company__form-title">Звоните нам по телефону <br> +7 (495) 792-66-69</div>
                            <p class="company__form-descr">или закажите обратный звонок чтобы получить ответы на все интересующие вас вопросы.</p>
@@ -432,7 +441,7 @@
                   <h2 class="title footer__h2">Напишите нам</h2>
                   <span class="footer__mail">info@millenium.ru</span>
                </div>
-               <div class="col-md-4 offset-md-3 col-lg-3 offset-lg-4">
+               <div class="col-sm-6 col-md-4 offset-md-3 col-lg-3 offset-lg-4">
                   <button id="orderСall" class="button">
                      Заказать звонок
                   </button>
@@ -503,6 +512,9 @@
       </div>
    </div>
 
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="./slick.min.js"></script>
    <script src="./script.js"></script>
 
 </body>

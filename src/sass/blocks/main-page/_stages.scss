@@ -11,10 +11,17 @@
       top: 115px + 40px; //высота шапки + отступ от шапки
       display: flex;
       margin-left: 36px;
+      transition: all 0.6s;
       &__line{
          width: 5px;
          background-color: #BDBDBD;
          height: inherit;
+      }
+      &__active-line{
+         margin: 22px 0;
+         width: 5px;
+         background-color: $second-color;
+         height: 0%;
       }
       &__item{
          font-weight: 600;
@@ -48,5 +55,10 @@
       .progress-bar{
          display: none;
       }
+   }
+}
+@media (max-width: 765px){
+   .stages{
+      margin-bottom: 100px;
    }
 }

@@ -61,3 +61,27 @@
       }
    }
 }
+@media (max-width: 765px){
+   .certificates{
+      &__wrapper{
+         background-image: url('../assets/img/certificates/star.png');
+         padding-top: 300px;
+         height: auto;
+         display: block;
+         background-position: top 50px center;
+         background-size: 185px;
+      }
+   }
+}
+@media (max-width: 576px){
+   .certificates{
+      margin-bottom: 100px;
+   }
+}
+@media (max-width: 440px){
+   .certificates{
+      &__wrapper{
+         padding: 300px 30px 50px 30px;
+      }
+   }
+}
