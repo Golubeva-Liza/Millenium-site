@@ -20,7 +20,7 @@
    }
 }
 @media (max-width: 576px){
-   .button{
+   .button:not(.modal__btn){
       max-width: 230px;
    }
 }

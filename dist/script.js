@@ -2,6 +2,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/form.js":
+/*!********************************!*\
+  !*** ./src/js/modules/form.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function sendForm() {
+  const form = document.querySelector('.modal__form');
+  const selector = document.querySelectorAll('input[type="tel"]');
+  let im = new Inputmask("+7 (999) 999-99-99");
+  im.mask(selector);
+  let formData = new FormData(form);
+  let xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      console.log('отправлено');
+    }
+  };
+
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
+  form.reset();
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (sendForm);
+
+/***/ }),
+
 /***/ "./src/js/modules/menu.js":
 /*!********************************!*\
   !*** ./src/js/modules/menu.js ***!
@@ -225,6 +255,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
 /* harmony import */ var _modules_progressBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/progressBar */ "./src/js/modules/progressBar.js");
 /* harmony import */ var _modules_sertifSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sertifSlider */ "./src/js/modules/sertifSlider.js");
+/* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/form */ "./src/js/modules/form.js");
+
 
 
 
@@ -234,6 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (0,_modules_menu__WEBPACK_IMPORTED_MODULE_1__["default"])("[data-menu-close]");
   (0,_modules_progressBar__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_modules_sertifSlider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_modules_form__WEBPACK_IMPORTED_MODULE_4__["default"])();
   window.addEventListener('scroll', function () {
     if (window.pageYOffset != 0) {
       document.querySelector('.header').classList.add('header_scroll');
